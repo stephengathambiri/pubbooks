@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+
+
+  <!-- Recommended -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Elements -->
+  <meta charset="utf-8">
+
+  <!-- Meta -->
+  <meta name="description" content="{{ metadata.description }}">
+
+
+  <title>{{ title or metadata.title }}</title>
+
+  <link rel="stylesheet" href="{{ '/site.css' | url }}">
+</head>
+
+<body class="font-sans leading-normal tracking-normal text-grey-900">
+  <header class="flex justify-between items-center border p-7">
+    <div>
+      <a href="" class="font-semibold text-3xl">PUBBOOKS</a>
+    </div>
+    <div class="space-x-9 mx-20 font-semibold">
+      <a href="" class="mx-8 font-semibold">Our Products</a>
+      <a href="" class="mx-8">Support</a>
+      <a href="" class="mx-8">About</a>
+      <a href="" class="mx-8">Login</a>
+      <a href="" class="mx-8 border rounded-full bg-red-700 py-3 px-6 font-semibold text-white border-black">Get Started</a>
+    </div>
+  </header>
+
+  {{ content | safe }}
+
+</body>
+</html>
